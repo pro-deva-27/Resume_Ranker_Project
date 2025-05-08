@@ -35,10 +35,8 @@ def score_resume(resume_text, jd_text, skills_list):
     matched_skills = find_matched_skills(resume_text, skills_list)
     skill_score = len(matched_skills)
 
-    # Combine into a hybrid score (weighted average or just sum)
-    hybrid_score = (similarity * 5 + skill_score) / 2  # Adjust weight if needed
+    hybrid_score = (similarity * 5 + skill_score) / 2 
 
-    # Generate feedback
     if similarity < 0.3 and skill_score < 3:
         feedback = "Resume poorly matches JD and lacks key skills."
     elif similarity < 0.5:

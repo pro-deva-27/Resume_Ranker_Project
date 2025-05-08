@@ -1,14 +1,12 @@
 import os
 from ranker import rank_resumes
 
-# ✅ Make JD globally accessible for import
 jd_text = """
 We are hiring a Python Developer with a strong background in backend development, RESTful APIs, and Flask.
 Experience in deploying applications, software testing, databases, and cloud environments like AWS or Azure is highly preferred.
 Candidates with knowledge of system design, scalable software architectures, and performance optimization will be prioritized.
 """
 
-# Optional: curated skills list (can also be reused elsewhere)
 skills_list = [
     "Python", "Flask", "RESTful APIs", "AWS", "Azure",
     "System Design", "Software Testing", "Deployment",
